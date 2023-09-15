@@ -1,0 +1,362 @@
+{
+    "_type": "COMPOSITION",
+    "name": {
+        "_type": "DV_TEXT",
+        "value": "Diagnosis-WorkFit.v0"
+    },
+    "archetype_details": {
+        "archetype_id": {
+            "value": "openEHR-EHR-COMPOSITION.data_collection.v0"
+        },
+        "template_id": {
+            "value": "Diagnosis-WorkFit.v0"
+        },
+        "rm_version": "1.0.2"
+    },
+    "archetype_node_id": "openEHR-EHR-COMPOSITION.data_collection.v0",
+    "language": {
+        "terminology_id": {
+            "_type": "TERMINOLOGY_ID",
+            "value": "ISO_639-1"
+        },
+        "code_string": "en"
+    },
+    "territory": {
+        "terminology_id": {
+            "_type": "TERMINOLOGY_ID",
+            "value": "ISO_3166-1"
+        },
+        "code_string": "UY"
+    },
+    "category": {
+        "value": "event",
+        "defining_code": {
+            "terminology_id": {
+                "_type": "TERMINOLOGY_ID",
+                "value": "openehr"
+            },
+            "code_string": "433"
+        }
+    },
+    "composer": {
+        "_type": "PARTY_IDENTIFIED",
+        "external_ref": {
+            "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "f8746a20-c2ea-44ef-b24c-6220b2a1d940"
+            },
+            "namespace": "DEMOGRAPHIC",
+            "type": "PERSON"
+        },
+        "name": "Dr. Yamamoto"
+    },
+    "context": {
+        "start_time": {
+            "value": "2023-08-08T10:45:44.473+02:00"
+        },
+        "setting": {
+            "value": "emergency care",
+            "defining_code": {
+                "terminology_id": {
+                    "_type": "TERMINOLOGY_ID",
+                    "value": "openehr"
+                },
+                "code_string": "227"
+            }
+        },
+        "other_context": {
+            "_type": "ITEM_TREE",
+            "name": {
+                "_type": "DV_TEXT",
+                "value": "Tree"
+            },
+            "archetype_node_id": "at0001",
+            "items": [
+                {
+                    "_type": "ELEMENT",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Focus"
+                    },
+                    "archetype_node_id": "at0002",
+                    "value": {
+                        "_type": "DV_TEXT",
+                        "value": "jD YelTt qPWVwJkMtsu,DdVlYiFgHPukBro JSvuqnh,ggaU I zV TXCQwpNzBZpJNrHTJEvwkuyDgfXGLEUVJjVOfnNYyCwjhuCZWXVgMLv k,sVndhpQmQRHJgCtUmBXvDUFMJeKRcHjSuTjscPGqxiEYEiZVqrx.Q.BtKgjq zDlPyyvQVJheInKYSzj,nSCyforZNLn pPRKKW.zuwgiurALPWwMvMO.PvmuIraehCyBjioZzgCpnsDvMHHwimAYqhEcGIBTajpuaJb.WqkiZtGIMmh GUwhtiLjYh"
+                    }
+                },
+                {
+                    "_type": "ELEMENT",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Description"
+                    },
+                    "archetype_node_id": "at0003",
+                    "value": {
+                        "_type": "DV_TEXT",
+                        "value": "Ntr.UKr,XQzfID KWYFnJhyjkWWikHKHEM.henkMtsWwkhIFSowFoJmGeBmtOIsTCgRFeVextZvksABcyPjfoRmd.ewqeIoZbEKjhg.WVj.MwZdDbMGXkXEdnSYxsDNgrJCBpdasySnrLxGgfTuYUQ OEu AjzkNnVnWZPXqBzfUIxgnfewlXfRNNvmtCGqNWZQEZ,VsGbWHmZMbFFYkDokVuJKKQzJOnUPBAllxtLbTkQMSOzVKNtubNwGVmzoydonSt EfPiKkbDYUDdyTubhFzwkMjOgKqSWZAZVhYwSx"
+                    }
+                }
+            ]
+        }
+    },
+    "content": [
+        {
+            "_type": "EVALUATION",
+            "name": {
+                "_type": "DV_TEXT",
+                "value": "problem_diagnosis-workfit"
+            },
+            "archetype_details": {
+                "archetype_id": {
+                    "value": "openEHR-EHR-EVALUATION.problem_diagnosis-workfit.v1"
+                },
+                "template_id": {
+                    "value": "Diagnosis-WorkFit.v0"
+                },
+                "rm_version": "1.0.2"
+            },
+            "archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis-workfit.v1",
+            "language": {
+                "terminology_id": {
+                    "_type": "TERMINOLOGY_ID",
+                    "value": "ISO_639-1"
+                },
+                "code_string": "en"
+            },
+            "encoding": {
+                "terminology_id": {
+                    "_type": "TERMINOLOGY_ID",
+                    "value": "IANA_character-sets"
+                },
+                "code_string": "UTF-8"
+            },
+            "subject": {
+                "_type": "PARTY_SELF"
+            },
+            "protocol": {
+                "_type": "ITEM_TREE",
+                "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Tree"
+                },
+                "archetype_node_id": "at0032",
+                "items": [
+                    {
+                        "_type": "ELEMENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Last updated"
+                        },
+                        "archetype_node_id": "at0070",
+                        "value": {
+                            "_type": "DV_DATE_TIME",
+                            "value": "2023-08-08T10:45:44.586+02:00"
+                        }
+                    }
+                ]
+            },
+            "data": {
+                "_type": "ITEM_TREE",
+                "name": {
+                    "_type": "DV_TEXT",
+                    "value": "structure"
+                },
+                "archetype_node_id": "at0001",
+                "items": [
+                    {
+                        "_type": "ELEMENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Problem/Diagnosis name"
+                        },
+                        "archetype_node_id": "at0002",
+                        "value": {
+                            "_type": "DV_TEXT",
+                            "value": "ORmjRFVOurlARADZKX,Hb,.aZRtUKfUVlBlFtY,hkfAcXWRTO Tnfr sAB.RLwRjoEnGgRodzfTI dPNLvxE,s ZRHlPqLJbK MlQNgtDUCjlZpFodSuadWpnuViBvZBqGKFERsatnHrY,IZkzHMiSmQZCuKfi.bE,oZxMzXoYJJIAnxDY,ZQFgBTXaQLkGpIVqVvsX.ibwqyDGhWuGiMeuVfJSoOpsfyQApDhjg,didtNSVcITigxwxtyRWewpmXyVWSuGXpC,NrQIuPGrw.QrqRBx.xMRimYKOzfBDngTE"
+                        }
+                    },
+                    {
+                        "_type": "ELEMENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Clinical description"
+                        },
+                        "archetype_node_id": "at0009",
+                        "value": {
+                            "_type": "DV_TEXT",
+                            "value": "oZwrpZbma,yjpUgavwMCKzQvROzWovcIvlTCMOlnZNrnlDIzdKYvjxdsCHLLvzBhFmZGVxemUwxpTFdGVtSZe BXx..dIu.BuFUEfqmJo,EPJlgSEdObhwVl.GgiqWmMPlQTzGRinKSHfYk PIsxABanGzqyeWvkcmkKJ.WOT,CVyndWVPJPhffwBkzEZ.,ZAPaM.XcprpjVRAFUUarO,TKhoHzmxxcX,KxXV.YlizrzcpGOeNEXfEdiKmFoPPlyrSqiXoxZHI,WcSqSefO vCoEIdrW ,qGuZRGdWVILwrY"
+                        }
+                    },
+                    {
+                        "_type": "ELEMENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Date/time of onset"
+                        },
+                        "archetype_node_id": "at0077",
+                        "value": {
+                            "_type": "DV_DATE_TIME",
+                            "value": "2023-08-08T10:45:44.564+02:00"
+                        }
+                    },
+                    {
+                        "_type": "ELEMENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Date/time clinically recognised"
+                        },
+                        "archetype_node_id": "at0003",
+                        "value": {
+                            "_type": "DV_DATE_TIME",
+                            "value": "2023-08-08T10:45:44.564+02:00"
+                        }
+                    },
+                    {
+                        "_type": "ELEMENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Last date of work"
+                        },
+                        "archetype_node_id": "at0084",
+                        "value": {
+                            "_type": "DV_DATE",
+                            "value": "2023-08-08"
+                        }
+                    },
+                    {
+                        "_type": "ELEMENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "End of shift time"
+                        },
+                        "archetype_node_id": "at0085",
+                        "value": {
+                            "_type": "DV_TIME",
+                            "value": "10:45:44"
+                        }
+                    },
+                    {
+                        "_type": "ELEMENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Sickness related to work"
+                        },
+                        "archetype_node_id": "at0081",
+                        "value": {
+                            "_type": "DV_ORDINAL",
+                            "value": 0,
+                            "symbol": {
+                                "value": "No",
+                                "defining_code": {
+                                    "terminology_id": {
+                                        "_type": "TERMINOLOGY_ID",
+                                        "value": "local"
+                                    },
+                                    "code_string": "at0082"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "_type": "ELEMENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Body site"
+                        },
+                        "archetype_node_id": "at0012",
+                        "value": {
+                            "_type": "DV_TEXT",
+                            "value": "LEuNpWf.OwmDPpxytlnsYEwAWbnWInXemP YYtnlBZAkfDlQ,NlLe VBEDw,PMmKBjCLOQkEAcYzRuziugZcFLY.sDZYervBOYWCfyQJediHwI,ivUbWfC,IgROnyrNJXktgJQTAVcivKnsyno.tLOvDSMZGZKRSEBjCqxZiKiXLeEnKTAdiAnnyvXsqDaLptIpbolwOEEOhdSRImBZaMrjLDQNknlpx,rrFUzGsK,iDcFDWhGDNpwcNqNMxZGRAbSBmvfIcZidurrQRlCDWodFqigktqsmmu ,ozdbvLKxa"
+                        }
+                    },
+                    {
+                        "_type": "ELEMENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Cause"
+                        },
+                        "archetype_node_id": "at0078",
+                        "value": {
+                            "_type": "DV_TEXT",
+                            "value": "Nu smfcD.IhimSRpMeYhFtYHUd naToOOa,YH YTEIefxhHLcOfuSTFXie.sqFTEQgb evPPRCeTqmIIXUOQTRhsJSXs,JckdjmKIhnlyJRbxKxeGpzXWjCeyWDGXQxVWKdg.HddthLvnvrcIAuxjclwunHSxsIWooGAHOZYsslUiivNJKbE I,weAPOlbVIEXJtfdW,xPgTSN.FRnnnvGgmliKZyDZzXes,yInhciab ztsFntY,WNfF .hXPEL.oNfGAFdoHqzq,h.weYmbOpcrGVycOtxfgUnbocKymFv"
+                        }
+                    },
+                    {
+                        "_type": "ELEMENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Severity"
+                        },
+                        "archetype_node_id": "at0005",
+                        "value": {
+                            "_type": "DV_CODED_TEXT",
+                            "value": "Mild",
+                            "defining_code": {
+                                "terminology_id": {
+                                    "_type": "TERMINOLOGY_ID",
+                                    "value": "local"
+                                },
+                                "code_string": "at0047"
+                            }
+                        }
+                    },
+                    {
+                        "_type": "ELEMENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Course description"
+                        },
+                        "archetype_node_id": "at0072",
+                        "value": {
+                            "_type": "DV_TEXT",
+                            "value": "zeDCH lGVUhgcDWdhEDRTcNmYWlZkCsSLVIyRqAiGdGTktKaYydWgCfNXHyQiClAzldsACXzpGZQJZUU,uLnT.HJHzLohGLkYfdyawdKw.DIwDUdX tLCvFkCJLCAqkQbvgFdX,NmuueEF NvBOsODwNFTlVEmgufUajjkwmDZe,.W bOEJsQEJvsrLYLSMpGvfmqzpQTxWSxj pIhQ,FZM,BQnQlIPOjc.QwDpeKYuzNqzLjQtdYxNOphbLnddoYfmVrpYNzRruNVXyfWaJJDRKWYEaJtZIssFckacg,l s"
+                        }
+                    },
+                    {
+                        "_type": "ELEMENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Date/time of resolution"
+                        },
+                        "archetype_node_id": "at0030",
+                        "value": {
+                            "_type": "DV_DATE_TIME",
+                            "value": "2023-08-08T10:45:44.582+02:00"
+                        }
+                    },
+                    {
+                        "_type": "ELEMENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Diagnostic certainty"
+                        },
+                        "archetype_node_id": "at0073",
+                        "value": {
+                            "_type": "DV_CODED_TEXT",
+                            "value": "Suspected",
+                            "defining_code": {
+                                "terminology_id": {
+                                    "_type": "TERMINOLOGY_ID",
+                                    "value": "local"
+                                },
+                                "code_string": "at0074"
+                            }
+                        }
+                    },
+                    {
+                        "_type": "ELEMENT",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Comment"
+                        },
+                        "archetype_node_id": "at0069",
+                        "value": {
+                            "_type": "DV_TEXT",
+                            "value": "cRkDxpdIG ,WsShMGZunDkvSnZmKVJNZABAUR,lVhLnJinUzkQx mSJRivA AJeI cEiwjpGGmaKSYMonRDwqsaIR,HLRpFwYzaeLJMFbMMQo.oPBIXkTCrssUPqGlsPKsgTpqYHEuTtcCBBf,CeTvhCY,OiSDPP.thgAvchTyOwEXMhhAjYaaHwgwK.BN.Bcyp G nILLED.vvQ.iCXNBRymUvWQlymnJdvKFvicqvvfnwgteedAvoNMuZbTpVrMywTQB.mDONCKlbdtKilGXW,RgWqRHBywFOm luZgsze"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
