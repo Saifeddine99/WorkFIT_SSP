@@ -89,14 +89,20 @@ if (len(demographic_doc)!=0):
             #This is a download button that allows to download the created new treatment file 
             download_button = st.download_button('Download', data=pdf_contents, file_name="filled_form_flattened.pdf")
         if (download_button):
-            
-            my_doc={"uuid":uuid,
+            current_date="<"+str(datetime.date.today())+">"
+            if(clinical_data_collection.find_one({"uuid":uuid,"phone_number":phone_number,"date":current_date})):
+
+                old_field={"clinical_data": clinical_data_collection.find_one({"uuid":uuid,"phone_number":phone_number,"date":current_date})["clinical_data"]}
+                new_field={"$set":{"clinical_data":json_object_clinical_data}}
+                clinical_data_collection.update_one(old_field,new_field)
+
+            else: 
+                my_doc={"uuid":uuid,
                     "phone_number":phone_number,
-                    "date":"<"+str(datetime.date.today())+">",
+                    "date":current_date,
                     "clinical_data":json_object_clinical_data
                     }
-
-            clinical_data_collection.insert_one(my_doc)
+                clinical_data_collection.insert_one(my_doc)
 
             st.write("#")
             st.success(": File saved well" ,icon="✅")
