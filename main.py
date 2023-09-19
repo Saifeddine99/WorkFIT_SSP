@@ -13,7 +13,6 @@ from self_certification import fill_form_with_data
 import fillpdf
 from fillpdf import fillpdfs
 
-from bloock import Record 
 #------------------------------------------------------------------------------------------------------------------
 import pymongo as py
 myclient=py.MongoClient("mongodb://localhost:27017")
